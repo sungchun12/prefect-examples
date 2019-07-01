@@ -1,0 +1,38 @@
+{
+  "name": "Python Data Analytics",
+  // "image": "justsung/vsc-py-dev:latest", #BYOI-Bring your own image via docker hub
+  "dockerFile": "Dockerfile", //I recommend you locally build your own image, but comment this out if BYOI
+  "appPort": 8888, //jupyter port running locally
+  "context": "..",
+  "postCreateCommand": [
+    "git config user.email \"sungwonchung3@gmail.com\"",
+    "git config user.name \"sungchun12\""
+  ],
+  "shutdownAction": "stopContainer",
+  "extensions": [
+    "ms-python.python",
+    "CoenraadS.bracket-pair-colorizer",
+    "DavidAnson.vscode-markdownlint",
+    "eamodio.gitlens",
+    "Equinusocio.vsc-material-theme",
+    "esbenp.prettier-vscode",
+    "GrapeCity.gc-excelviewer",
+    "hoovercj.vscode-power-mode",
+    "jakebathman.mysql-syntax",
+    "jithurjacob.nbpreviewer",
+    "KnisterPeter.vscode-github",
+    "morrislaptop.vscode-open-in-sourcetree",
+    "ms-python.anaconda-extension-pack",
+    "oderwat.indent-rainbow",
+    "PeterJausovec.vscode-docker",
+    "PKief.material-icon-theme",
+    "redhat.vscode-yaml",
+    "shakram02.bash-beautify",
+    "SirTori.indenticator",
+    "vscode-icons-team.vscode-icons",
+    "wholroyd.jinja"
+  ],
+  "settings": {
+    "python.pythonPath": "/usr/local/bin/python"
+  }
+}

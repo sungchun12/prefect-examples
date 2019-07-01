@@ -14,7 +14,7 @@ RUN apt-get update \
   && apt-get -y install --no-install-recommends apt-utils 2>&1
 
 # Install git, process tools, lsb-release, nano, unzip, wget (common in install instructions for CLIs)
-RUN apt-get -y install git procps lsb-release nano unzip wget
+RUN apt-get -y install git procps lsb-release nano unzip wget graphviz
 
 ###### Install google cloud SDK ######
 # Downloading gcloud package

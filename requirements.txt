@@ -1,2 +1,2 @@
-prefect==1.2.2
+prefect==2.20.17
 prefect[viz]
